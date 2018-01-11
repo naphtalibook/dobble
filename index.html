@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Dobble</title>
+</head>
+
+<body>
+    <nav>
+    </nav>
+    <div id="main" class="clearfix">
+        <p id="timeToBeat">time to beat: <span id="bestTime"></span></p>
+        <div id="card1" class="cardStyle clearfix">
+            <div id="card1-1" class="imgHolder" onclick="selection('card1-1')">
+            </div>
+            <div id="card1-2" class="imgHolder" onclick="selection('card1-2')">
+            </div>
+            <div id="card1-3" class="imgHolder" onclick="selection('card1-3')">
+            </div>
+            <div id="card1-4" class="imgHolder" onclick="selection('card1-4')">
+            </div>
+            <div id="card1-5" class="imgHolder" onclick="selection('card1-5')">
+            </div>
+            <div id="card1-6" class="imgHolder" onclick="selection('card1-6')">
+            </div>
+            <div id="card1-7" class="imgHolder" onclick="selection('card1-7')">
+            </div>
+            <div id="card1-8" class="imgHolder" onclick="selection('card1-8')">
+            </div>
+        </div>
+
+        <div id="card2" class="cardStyle clearfix">
+            <div id="card2-1" class="imgHolder" onclick="selection2('card2-1')">
+            </div>
+            <div id="card2-2" class="imgHolder" onclick="selection2('card2-2')">
+            </div>
+            <div id="card2-3" class="imgHolder" onclick="selection2('card2-3')">
+            </div>
+            <div id="card2-4" class="imgHolder" onclick="selection2('card2-4')">
+            </div>
+            <div id="card2-5" class="imgHolder" onclick="selection2('card2-5')">
+            </div>
+            <div id="card2-6" class="imgHolder" onclick="selection2('card2-6')">
+            </div>
+            <div id="card2-7" class="imgHolder" onclick="selection2('card2-7')">
+            </div>
+            <div id="card2-8" class="imgHolder" onclick="selection2('card2-8')">
+            </div>
+        </div>
+        <div class="buttons">
+            <input id="start" type="button" value="start" onclick="oneMore()" ; <input type="button" value="stop">
+            <!--why if i deleat this the reset button ud deleated?-->
+            <input id="reset" type="button" value="reset" onclick="playAgin()">
+            <div>
+
+                <p id="time"></p>
+                <p id="finish" class="finishScor">
+                    <p>
+                        <p id="scor" class="finishScor"></p>
+                        <!--<input id="hiestName" class="inputName" type="text" placeholder="name:">-->
+
+            </div>
+        </div>
+    </div>
+    <div id="highetScore">
+        
+    </div>
+    <p id="instructions">instructions: click on the matching pattern</p>
+    <script src="javascript/script.js"></script>
+    <script src="stoper/time.js"></script>
+</body>
+
+</html>
